@@ -32,17 +32,7 @@ function access(app) {
         document.querySelector('header').removeAttribute('data-init')
     };
 
-    app.search.back.style.display = 'none';
-    app.search.logo.style.display = 'inline';
-    app.search.logo.style.marginLeft = '0';
-    app.search.submit.style.display = 'inline';
-    app.search.input.style.removeProperty('display');
-    app.search.input.placeholder = 'Search the web';
-    app.header.target.setAttribute('data-page', '');
-    app.nav.target.style.removeProperty('display');
-    document.querySelector('#open-nav').setAttribute('data-open', '');
-    app.search.input.focus();
-
+    
 
     
     app.nav.community = app.createLink('#community', 'Community');
